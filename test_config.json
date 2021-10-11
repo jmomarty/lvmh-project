@@ -1,0 +1,6 @@
+{
+  "test": "test",
+  "rec_files": {"classic_rock_songs": "data/classic-rock-songs.txt",
+                "random_songs": "data/random-songs.txt",
+                "top_songs": "data/top-songs.txt"}
+}
