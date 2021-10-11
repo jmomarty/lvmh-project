@@ -21,7 +21,7 @@ class ThompsonSamplingRecSys:
         self.number_of_models = len(self.recs.keys())
         self.models = list(self.recs.keys())
         self.ts = ThompsonSampler(self.number_of_models)
-        self.plot()
+        #self.plot()
 
     def _load_config(self, fn):
         with open(fn, 'r') as f:
@@ -47,7 +47,7 @@ class ThompsonSamplingRecSys:
         self.ts.get_reward(feedback)
         self.ts.update_beta_dist()
         self.log_infos()
-        self.plot()
+        #self.plot()
 
     def log_infos(self):
         for i, model in enumerate(self.models):
